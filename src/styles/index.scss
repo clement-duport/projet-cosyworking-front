@@ -1,0 +1,40 @@
+@use 'reset';
+@use 'vars';
+
+
+html {
+  height: fill-available;
+    height: -webkit-fill-available;
+}
+body {
+  font-family: sans-serif;
+  min-height: fill-available;
+  min-height: -webkit-fill-available;
+  padding-top: 82px; 
+}
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    min-height: -webkit-fill-available;
+  }
+}
+#root{
+  width: 100%;
+}
+@media screen and (max-width: 840px)
+{
+   body{
+    padding-top:0;
+   }
+}
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/

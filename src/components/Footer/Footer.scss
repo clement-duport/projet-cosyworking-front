@@ -1,0 +1,126 @@
+@use '../../styles/vars';
+@use 'sass:color';
+
+.Footer{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: auto;
+    width: 70vw;
+    margin-top: 2em;
+}
+.topFooter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.logoContainer{
+    width:30%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.logoFooter{
+    height: 70%;
+    box-sizing: border-box;
+}
+.infos{
+    margin: 1em 0;
+    text-align: center;
+}
+.adressFooter{
+    margin: 0 0 2em 0;
+    font-size: 0.8em;
+}
+
+.footerNavBar{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleFooter{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.navigationFooter-links{
+    margin-top: 1em;
+}
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 30%;
+}
+.socialsFooter{
+    margin: 0 0.7em;
+}
+
+.bottomFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5em 0 2em 0;
+    align-items: center;
+}
+.bottomFooter-links{
+    margin: 1em 1.5em 0 1.5em;
+}
+.border{
+    border-top: 3px solid black;
+    width: 40%;
+    margin-bottom: 1.5em;
+}
+.contactButton{
+    background-color: #FFC000;
+    padding: 1em 1.5em;
+    border-radius: 16px;
+    margin-top: 1em;
+}
+@media screen and (max-width: 1400px)
+{
+    .Footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 840px)
+{
+    .Footer{
+        width: 100%;
+        margin-top: 0;
+
+    }
+    .topFooter{
+        flex-direction: column;
+        align-items: center;
+    }
+    .follow{
+        margin-top: 2em;
+        width: 90%;
+    }
+    .bottomFooter{
+        margin-bottom: 70px;
+    }
+    .logoContainer{
+       display: none;
+    }
+    .footerNavBar{
+       display: none;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    .bottomLinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

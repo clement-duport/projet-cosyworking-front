@@ -1,0 +1,196 @@
+@use '../../../styles/vars';
+@use 'sass:color';
+
+.MonProfil{
+    margin: auto;
+    min-height: 100vh;
+
+    &-title{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    &-Card{
+        margin: 0.7rem;
+        margin-bottom: 0rem;
+        display: flex;
+        flex-direction: column;
+
+        &-CardMedia{
+            max-width: 20px;
+        }
+
+        &-MainBox{
+            width: 100%;
+
+            &-BoxButtons{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content:center ;
+
+                &-ButtonSend{
+                  width: 100%;
+                  text-align: center;
+                }
+
+                &-ButtonCanceled{
+                  width: 100%; 
+                  text-align: center;
+                }
+              }
+
+            &-CardContent{  
+            //   width: 100%;              
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              &-Box{
+                // width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                &-BoxAvatar{
+                    margin: auto;
+                    margin-top: 0.8rem;
+                    margin-bottom: 0.8rem;
+                }
+
+                &-BoxName{
+                    text-align: center;
+                }
+              }
+            }
+
+            &-BoxAbout{
+                margin: 1rem  1rem;
+                height: 100px;
+
+                &-about{
+                    padding-left: 0.5rem;
+                }
+            }
+        }          
+    }            
+}    
+
+
+.backTitleDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+    background-image:url(../../../img/CTODesk.jpg);
+    background-size: cover ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    h1{
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+.cardAboutUsProfil{
+    width: 100%;
+    padding: 0 1em;
+}
+
+@media only screen and (min-width: 840px) {
+    .MonProfil{
+        width: 80vw;
+        margin: auto;
+        min-height: 100vh;
+    
+        &-title{
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    
+        &-Card{
+            margin: 0.7rem;
+            margin-bottom: 0rem;
+            display: flex;
+    
+            &-CardMedia{
+                max-width: 200px;
+            }
+    
+            &-MainBox{
+                width: 100%;
+
+                &-BoxButtons{
+                  display: flex;
+                  align-items: center;
+                  justify-content:flex-end ;
+
+                  &-ButtonSend{
+                    width: 50%;
+                    text-align: center;
+                  }
+
+                  &-ButtonCanceled{
+                    width: 50%; 
+                    text-align: center;
+                    color: red;
+                  }
+                }
+    
+                &-CardContent{  
+                //   width: 100%;              
+                  display: flex;
+                  align-items: center;
+                  margin: 0 4em;
+    
+                  &-Box{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    
+                    &-BoxAvatar{
+                        margin:0;
+                        display: flex;
+                        justify-content: center;
+                        width: 35%;
+                        margin-top: 0.8rem;
+                        margin-bottom: 0.8rem;
+                    }
+    
+                    &-BoxName{
+                        width: 65%;
+                        text-align: left;
+                    }
+                  }
+                }
+    
+                &-BoxAbout{
+                    margin: 3rem  4em 3rem 4em;
+                    width: 100%;
+                    min-height: 150px;
+    
+                    &-about{
+                        padding-left: 0.5rem;
+                    }
+                }
+            }          
+        }            
+    }    
+    .testCenterAbout{
+        display: flex;
+        justify-content: center;
+    }
+    .cardAboutUsProfil{
+        width: 100%;
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .MonProfil{
+        width: 60vw;
+    }
+}
